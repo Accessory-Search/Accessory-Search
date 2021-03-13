@@ -1,5 +1,4 @@
 # Accessory Search
-================================================================
 
 This code has the source code for the paper "JEDI: Joint accEssory Discovery and re-Identification (JEDI) for Accessory Search". Including:
 
@@ -9,8 +8,12 @@ This code has the source code for the paper "JEDI: Joint accEssory Discovery and
 
 > JEDI code
 
+================================================================
+
 ## About Annotation
 pending...
+
+================================================================
 
 ## About JEDI
 pending...
