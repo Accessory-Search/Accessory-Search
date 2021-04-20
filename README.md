@@ -28,8 +28,8 @@ The statics of Accessory-Market and Accessory-MSMT17 is shown below.
 
 | Name             | IDs  | Images | Bboxes | Qeuries | QuerySize           |
 | :--:             | :--: | :--:   | :--:   | :--:    | :--:                |
-| Accessory-Market | 1448 | 15321  | 40104  | 4848    | $$[33\pm18,34\pm15]$$   | 
-| Accessory-MSMT17 | 2713 | 32033  | 74528  | 10020   | $$[108\pm104,77\pm65]$$ |
+| Accessory-Market | 1448 | 15321  | 40104  | 4848    | [33&plusmn;18,34&plusmn;15]   | 
+| Accessory-MSMT17 | 2713 | 32033  | 74528  | 10020   | [108&plusmn;104,77&plusmn;65] |
 
 Statistical analysis of the Accessory-Market and Accessory-MSMT17. (a) and (b): the distribution of accessory IDs. (c): correspondence between accessories and human parsing categories. (e,f,g): the relation ship between accessory IDs and person IDs. (d) and (h): the heatmaps of the bounding box locations.
 ![dataset_distribution](https://github.com/Accessory-Search/Accessory-Search/blob/main/Images/datacurve1.jpg)
@@ -58,18 +58,18 @@ We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17
 
 | Method | Recall | mAP | R-1 | R-5 | R-10 |
 | :--:   | :--:   | :--:| :--:| :--:| :--: |
-| ISP [<\sup>3<\sup>](#refer-anchor-3)    |    _    |   0.4  |  0.2   |   0.8  |   1.4   |
-| DELG[<\sup>2<\sup>](#refer-anchor-2)   |    -   | 0.5    |  1.9   |   5.3  |   7.1   |
-| GlobalTrack [<\sup>4<\sup>](#refer-anchor-4) | -   |   1.9  |   12.3  |   40.4  |  49.0    |
+| ISP [<sup>3<\sup>](#refer-anchor-3)    |    _    |   0.4  |  0.2   |   0.8  |   1.4   |
+| DELG[<sup>2<\sup>](#refer-anchor-2)   |    -   | 0.5    |  1.9   |   5.3  |   7.1   |
+| GlobalTrack [<sup>4<\sup>](#refer-anchor-4) | -   |   1.9  |   12.3  |   40.4  |  49.0    |
 | *JEDI [<\sup>5<\sup>](#refer-anchor-5)*   |     *18.8*   |  *20.8*  |   *24.4*  |  *77.4*   |   *90.4*   |
 
 * Accessory-MSMT17
 
 | Method | Recall | mAP | R-1 | R-5 | R-10 |
 | :--:   | :--:   | :--:| :--:| :--:| :--: |
-| ISP [<\sup>3<\sup>](#refer-anchor-3)    |   -     |  0.2   |   0.2  |  0.7   |  1.2    |
-| DELG[<\sup>2<\sup>](#refer-anchor-2)   |    -    |  0.1   |   0.3  |  1.1   |  1.1    |
-| GlobalTrack [<\sup>4<\sup>](#refer-anchor-4) | -  |   1.6  |  4.3   |  30.4   |  39.1    |
+| ISP [<sup>3<\sup>](#refer-anchor-3)    |   -     |  0.2   |   0.2  |  0.7   |  1.2    |
+| DELG[<sup>2<\sup>](#refer-anchor-2)   |    -    |  0.1   |   0.3  |  1.1   |  1.1    |
+| GlobalTrack [<sup>4<\sup>](#refer-anchor-4) | -  |   1.6  |  4.3   |  30.4   |  39.1    |
 | *JEDI*   |    *7.7*    |  *16.2*   |  *20.6*   |  *74.2*   |  *87.4*    |
 
 
@@ -79,9 +79,9 @@ For a more comprehensive comparision, we also counted the inference speed of dif
 
 | Method | Time(ms) | 
 | :--:   | :--:   |
-| ISP [<\sup>3<\sup>](#refer-anchor-3)    |   298     |  
-| DELG[<\sup>2<\sup>](#refer-anchor-2)   |   33    |  
-| GlobalTrack [<\sup>4<\sup>](#refer-anchor-4) | 113  |   
+| ISP [<sup>3<\sup>](#refer-anchor-3)    |   298     |  
+| DELG[<sup>2<\sup>](#refer-anchor-2)   |   33    |  
+| GlobalTrack [<sup>4<\sup>](#refer-anchor-4) | 113  |   
 | *JEDI*   |    40    |
 
 
