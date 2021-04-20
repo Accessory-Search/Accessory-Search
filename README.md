@@ -18,13 +18,13 @@ This repo has the source code for the paper "JEDI: Joint accEssory Discovery and
   More statics of Accessory-Market and Accessory-MSMT17 is listed below.
 
 ### 2.Accessory Cases Visualization
-Sample images of Accessory-Market and Accessory-MSMT17. Each image has multiple accessories in red boxes. Some accessories labeled as the same ID are enlarged for visualization.  
+* Sample images of Accessory-Market and Accessory-MSMT17 are shown below. Each image has multiple accessories in red boxes. Some accessories labeled as the same ID are enlarged for visualization.  
 ![cases_visualization](https://github.com/Accessory-Search/Accessory-Search/blob/main/Images/20210420144758.jpg)
 
 
 ### 3.Data Statics
 
-* The statics of Accessory-Market and Accessory-MSMT17 is shown below. 
+* The statics of Accessory-Market and Accessory-MSMT17 are shown below. 
 
 | Name             | IDs  | Images | Bboxes | Qeuries | QuerySize           |
 | :--:             | :--: | :--:   | :--:   | :--:    | :--:                |
