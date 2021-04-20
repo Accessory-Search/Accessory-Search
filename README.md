@@ -40,12 +40,7 @@ Statistical analysis of the Accessory-Market and Accessory-MSMT17. (a) and (b): 
 We evaluate the accessory search performance of different methods using metrics listed blow:
 
 * Metrics   
-    * mAP: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[<sup>1<sup>](#refer-anchor-1). Then the mean value of APs of all queries is obtained with equation blow:
-
-
-    $$mAP=\frac{\sum_{i=1}^{N_q}AP_i}{N_q}$$
-
-
+    * mAP: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[<sup>1<sup>](#refer-anchor-1). Then the mean value of APs of all queries, i.e. mAP is obtained.
     * CMC: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [<sup>1<sup>](#refer-anchor-1). 
     Note: The calculation of mAP and CMC in proposed accessory search task is very similar with ReID. However, an image is considered as true positive only if it contains the same accessory as the query, no matter if the person is the same or not.
    
@@ -89,7 +84,7 @@ For a more comprehensive comparision, we also counted the inference speed of dif
 | *JEDI*   |    40    |
 
 
-* For more information, feel free to contack us at accessory_search@163.com. 
+* For more information, feel free to contact us at accessory_search@163.com. 
 
 
 ## Refenrence
