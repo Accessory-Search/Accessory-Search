@@ -34,7 +34,6 @@ This repo has the source code for the paper "JEDI: Joint accEssory Discovery and
 * Statistical analysis of the Accessory-Market and Accessory-MSMT17 are shown below. (a) and (b): the distribution of accessory IDs. (c): correspondence between accessories and human parsing categories. (e,f,g): the relation ship between accessory IDs and person IDs. (d) and (h): the heatmaps of the bounding box locations.
 ![dataset_distribution](https://github.com/Accessory-Search/Accessory-Search/blob/main/Images/datacurve1.jpg)
 
-================================================================
 
 ## Evaluation
 We evaluate the accessory search performance of different methods using metrics listed blow:
@@ -42,13 +41,10 @@ We evaluate the accessory search performance of different methods using metrics 
 * Metrics   
     * mAP: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[<sup>1<sup>](#refer-anchor-1). Then the mean value of APs of all queries, i.e. mAP is obtained.
     * CMC: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [<sup>1<sup>](#refer-anchor-1). 
-    
-    Note: The calculation of mAP and CMC in proposed accessory search task is very similar with ReID. However, an image is considered as true positive only if it contains the same accessory as the query, no matter if the person is the same or not.
-   
     * ReCall(IoU>0.6): We propose ReCall(IoU>0.6) to measure how well the accessories have been exploited, i.e. recall at IoU>0.6. The box is regarded as a true match if its IoU to a ground truth accessory box is larger than 0.6. This metric is computed across all query and gallery boxes.
 
-
-================================================================
+    Note: The calculation of mAP and CMC in proposed accessory search task is very similar with ReID. However, an image is considered as true positive only if it contains the same accessory as the query, no matter if the person is the same or not.
+ 
 
 ## Leardboard
 
