@@ -40,10 +40,12 @@ Statistical analysis of the Accessory-Market and Accessory-MSMT17. (a) and (b): 
 We evaluate the accessory search performance of different methods using metrics listed blow:
 
 * Metrics   
-    * mAP: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[<sup>1<sup>](#refer-anchor-1). Then the mean value of APs of all queries is obtained with equation blow: 
-    
-    $$mAP =  \frac {\sum_{i=1}^{N_q} AP_i}{N_q}$$ 
-    
+    * mAP: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[<sup>1<sup>](#refer-anchor-1). Then the mean value of APs of all queries is obtained with equation blow:
+
+
+    $$mAP=\frac{\sum_{i=1}^{N_q}AP_i}{N_q}$$
+
+
     * CMC: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [<sup>1<sup>](#refer-anchor-1). 
     Note: The calculation of mAP and CMC in proposed accessory search task is very similar with ReID. However, an image is considered as true positive only if it contains the same accessory as the query, no matter if the person is the same or not.
    
@@ -92,13 +94,17 @@ For a more comprehensive comparision, we also counted the inference speed of dif
 
 ## Refenrence
 <div id="refer-anchor-1"></div>
+
 - [1] [Scalable Person Re-identification: A Benchmark](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Zheng_Scalable_Person_Re-Identification_ICCV_2015_paper.pdf) 
 
 <div id="refer-anchor-2"></div>
+
 - [2] [Unifying deep local and global features for image search](https://arxiv.org/pdf/2001.05027.pdf)
 
 <div id="refer-anchor-3"></div>
+
 - [3] [Identity-Guided Human Semantic Parsing for Person Re-Identification](https://arxiv.org/pdf/2007.13467.pdf)
 
 <div id="refer-anchor-4"></div>
+
 - [4] [GlobalTrack: A Simple and Strong Baseline for Long-term Tracking](https://arxiv.org/pdf/1912.08531.pdf)
