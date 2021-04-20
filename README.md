@@ -51,7 +51,7 @@ We evaluate the accessory search performance of different methods using metrics 
 
 ## Leardboard
 
-We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17 datasets, the results is shown below:
+We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17 datasets, the results are shown below.
 
 * Accessory-Market
 
@@ -73,8 +73,6 @@ We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17
 
 
 * Speed
-
-For a more comprehensive comparision, we also counted the inference speed of different methods.
 
 | Method | Time(ms) | 
 | :--:   | :--:   |
