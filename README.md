@@ -11,8 +11,8 @@ This repo has the source code for the paper "JEDI: Joint accEssory Discovery and
 ## Annotation
 
 ### 1.Data Sources and Annotation Format
-* Please download original images from [Market1501](http://zheng-lab.cecs.anu.edu.au/Project/project_reid.html) and MSMT17-V1. The image name and person id of each accessory is consistance with original reid data. 
-* We provide txt files for annotation in folder annotation. The annotation is formatted as **[ImageName, [left, top, right, bottom], AccessoryId, IsQuery]**.     
+* Please download original images from [Market1501](http://zheng-lab.cecs.anu.edu.au/Project/project_reid.html) and MSMT17-V1. The image name and person id is consistance with original reid data. 
+* We provide txt files for annotation in folder annotation. The annotation is formatted as **[ImageName, [left, top, right, bottom], AccessoryId, IsQuery]**. Query images are marked by IsQuery==1, and gallery images are marked by IsQuery==0.     
   * The Accessory-Market dataset has 40104 object bounding boxes which is classified to 1448 object ids.
   * The Accessory-MSMT17 dataset has 74528 object bounding boxes which is classified to 2713 object ids.
   More statics of Accessory-Market and Accessory-MSMT17 is listed below.
@@ -91,9 +91,12 @@ For a more comprehensive comparision, we also counted the inference speed of dif
 ## Refenrence
 <div id="refer-anchor-1"></div>
 - [1] [Scalable Person Re-identification: A Benchmark](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Zheng_Scalable_Person_Re-Identification_ICCV_2015_paper.pdf) 
+
 <div id="refer-anchor-2"></div>
 - [2] [Unifying deep local and global features for image search](https://arxiv.org/pdf/2001.05027.pdf)
+
 <div id="refer-anchor-3"></div>
 - [3] [Identity-Guided Human Semantic Parsing for Person Re-Identification](https://arxiv.org/pdf/2007.13467.pdf)
+
 <div id="refer-anchor-4"></div>
 - [4] [GlobalTrack: A Simple and Strong Baseline for Long-term Tracking](https://arxiv.org/pdf/1912.08531.pdf)
