@@ -1,20 +1,24 @@
+<style>
+img{
+    width: 60%;
+    padding-left: 20%;
+    }
+</style>
 # Accessory Search
 
-This repo has the source code for the paper "JEDI: Joint accEssory Discovery and re-Identification (JEDI) for Accessory Search". Including:
+This repo has the accessory annotation for the paper "JEDI: Joint accEssory Discovery and re-Identification (JEDI) for Accessory Search". Including:
 
-* the annotation of Accessory-Market
+* the annotation of Accessory-Market.
 
-* the annotation of Accessory-MSMT17
-
-* the evaluation code of Accessory-Search task (comming soon)
+* the annotation of Accessory-MSMT17.
 
 ## Annotation
 
 ### 1.Data Sources and Annotation Format
-* Please download original images from [Market1501](http://zheng-lab.cecs.anu.edu.au/Project/project_reid.html) and MSMT17-V1. The image name and person id is consistance with original reid data. 
+* Please download original images from [Market1501](http://zheng-lab.cecs.anu.edu.au/Project/project_reid.html) and [MSMT17-V1](https://arxiv.org/pdf/1711.08565v2.pdf). The image name and person id is consistance with original reid data. 
 * We provide txt files for annotation in folder annotation. The annotation is formatted as **[ImageName, [left, top, right, bottom], AccessoryId, IsQuery]**. Query images are marked by IsQuery==1, and gallery images are marked by IsQuery==0.     
-  * The Accessory-Market dataset has 40104 object bounding boxes which is classified to 1448 object ids.
-  * The Accessory-MSMT17 dataset has 74528 object bounding boxes which is classified to 2713 object ids.
+  * The Accessory-Market dataset has 40104 object bounding boxes which is classified to 1448 object ids, and is divided into 4848 queries and 35256 galleries.  
+  * The Accessory-MSMT17 dataset has 74528 object bounding boxes which is classified to 2713 object ids, and is divided into 10020 queries and 64508 galleries.
   More statics of Accessory-Market and Accessory-MSMT17 is listed below.
 
 ### 2.Accessory Cases Visualization
@@ -26,10 +30,10 @@ This repo has the source code for the paper "JEDI: Joint accEssory Discovery and
 
 * The statics of Accessory-Market and Accessory-MSMT17 are shown below. 
 
-| Name             | IDs  | Images | Bboxes | Qeuries | QuerySize           |
-| :--:             | :--: | :--:   | :--:   | :--:    | :--:                |
-| Accessory-Market | 1448 | 15321  | 40104  | 4848    | [33&plusmn;18,34&plusmn;15]   | 
-| Accessory-MSMT17 | 2713 | 32033  | 74528  | 10020   | [108&plusmn;104,77&plusmn;65] |
+| Name             | IDs  | Images | Bboxes | Qeuries | Galleries |QuerySize           |
+| :--:             | :--: | :--:   | :--:   | :--:    | :--:      |:--:                |
+| Accessory-Market | 1448 | 15321  | 40104  | 4848    |   35256   |[33&plusmn;18,34&plusmn;15]   | 
+| Accessory-MSMT17 | 2713 | 32033  | 74528  | 10020   |   64508   |[108&plusmn;104,77&plusmn;65] |
 
 * Statistical analysis of the Accessory-Market and Accessory-MSMT17 are shown below. (a) and (b): the distribution of accessory IDs. (c): correspondence between accessories and human parsing categories. (e,f,g): the relation ship between accessory IDs and person IDs. (d) and (h): the heatmaps of the bounding box locations.
 ![dataset_distribution](https://github.com/Accessory-Search/Accessory-Search/blob/main/Images/datacurve1.jpg)
@@ -39,9 +43,9 @@ This repo has the source code for the paper "JEDI: Joint accEssory Discovery and
 We evaluate the accessory search performance of different methods using metrics listed blow:
 
 * Metrics   
-    * mAP: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[<sup>1<sup>](#refer-anchor-1). Then the mean value of APs of all queries, i.e. mAP is obtained.
-    * CMC: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [<sup>1<sup>](#refer-anchor-1). 
-    * ReCall(IoU>0.6): We propose ReCall(IoU>0.6) to measure how well the accessories have been exploited, i.e. recall at IoU>0.6. The box is regarded as a true match if its IoU to a ground truth accessory box is larger than 0.6. This metric is computed across all query and gallery boxes.
+    * *mAP*: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[<sup>1<sup>](#refer-anchor-1). Then the mean value of APs of all queries, i.e. mAP is obtained.
+    * *CMC(Rank-1)*: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [<sup>1<sup>](#refer-anchor-1). The Rank-1, Rank-5 and Rank-10 of CMC curve is used to represent the precision of different methods.   
+    * *ReCall(IoU>0.6)*: We propose ReCall(IoU>0.6) to measure how well the accessories have been exploited, i.e. recall at IoU>0.6. The box is regarded as a true match if its IoU to a ground truth accessory box is larger than 0.6. This metric is computed across all query and gallery boxes.
 
     Note: The calculation of mAP and CMC in proposed accessory search task is very similar with ReID. However, an image is considered as true positive only if it contains the same accessory as the query, no matter if the person is the same or not.
  
