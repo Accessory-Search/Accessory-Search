@@ -70,8 +70,8 @@ We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17
 
 | Method | Time(ms) | 
 | :--:   | :--:   |
-| ISP [<sup>3<sup>](#refer-anchor-3)    |   298     |  
-| DELG[<sup>2<sup>](#refer-anchor-2)   |   33    |  
+| ISP [<sup>3<sup>](#refer-anchor-3)    |   33     |  
+| DELG[<sup>2<sup>](#refer-anchor-2)   |   298    |  
 | GlobalTrack [<sup>4<sup>](#refer-anchor-4) | 113  |   
 | *JEDI*   |    40    |
 
