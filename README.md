@@ -1,9 +1,3 @@
-<style>
-img{
-    width: 60%;
-    padding-left: 20%;
-    }
-</style>
 # Accessory Search
 
 This repo has the accessory annotation for the paper "JEDI: Joint accEssory Discovery and re-Identification (JEDI) for Accessory Search". Including:
@@ -23,8 +17,8 @@ This repo has the accessory annotation for the paper "JEDI: Joint accEssory Disc
 
 ### 2.Accessory Cases Visualization
 * Sample images of Accessory-Market and Accessory-MSMT17 are shown below. Each image has multiple accessories in red boxes. Some accessories labeled as the same ID are enlarged for visualization.  
-![cases_visualization](https://github.com/Accessory-Search/Accessory-Search/blob/main/Images/20210420144758.jpg)
-
+[//]: # ![cases_visualization](https://github.com/Accessory-Search/Accessory-Search/blob/main/Images/20210420144758.jpg)
+<img src="https://github.com/Accessory-Search/Accessory-Search/blob/main/Images/20210420144758.jpg", width="500">
 
 ### 3.Data Statics
 
