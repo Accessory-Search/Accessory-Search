@@ -32,13 +32,12 @@ This repo has the accessory annotation and accessory search leaderboard proposed
 ![dataset_distribution](https://github.com/Accessory-Search/Accessory-Search/blob/main/Images/datacurve1.jpg)
 
 
-## Evaluation
+## Evaluation Metrics
 We evaluate the accessory search performance of different methods using metrics listed blow:
 
-* Metrics   
-    * **mAP**: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[[1](#refer-anchor-1)]. Then the mean value of APs of all queries, i.e. mAP is obtained.
-    * **CMC**: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [[1](#refer-anchor-1)]. We choose Rank-1, Rank-5 and Rank-10 of CMC curve for a brief comparision in following leardborad.   
-    * **ReCall(IoU>0.6)**: We propose ReCall(IoU>0.6) to measure how well the accessories have been exploited, i.e. recall at IoU>0.6. The box is regarded as a true match if its IoU to a ground truth accessory box is larger than 0.6. This metric is computed across all query and gallery boxes.
+* **mAP**: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[[1](#refer-anchor-1)]. Then the mean value of APs of all queries, i.e. mAP is obtained.
+* **CMC**: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [[1](#refer-anchor-1)]. We choose Rank-1, Rank-5 and Rank-10 of CMC curve for a brief comparision in following leardborad.   
+* **ReCall(IoU>0.6)**: We propose ReCall(IoU>0.6) to measure how well the accessories have been exploited, i.e. recall at IoU>0.6. The box is regarded as a true match if its IoU to a ground truth accessory box is larger than 0.6. This metric is computed across all query and gallery boxes.
 
     Note: The calculation of mAP and CMC in proposed accessory search task is very similar with ReID. However, an image is considered as true positive only if it contains the same accessory as the query, no matter if the person is the same or not.
  
@@ -47,7 +46,7 @@ We evaluate the accessory search performance of different methods using metrics 
 
 We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17 datasets, the results are shown below.
 
-* **Accessory-Market**
+* Accessory-Market
 
 | Method | Recall | mAP | R-1 | R-5 | R-10 |
 | :--:   | :--:   | :--:| :--:| :--:| :--: |
@@ -56,7 +55,7 @@ We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17
 | GlobalTrack [[4](#refer-anchor-4)] | -   |   1.9  |   12.3  |   40.4  |  49.0    |
 | JEDI   |    18.8   |  **20.8**  |   **24.4**  |  **77.4**   |   **90.4**   |
 
-* **Accessory-MSMT17**
+* Accessory-MSMT17
 
 | Method | Recall | mAP | R-1 | R-5 | R-10 |
 | :--:   | :--:   | :--:| :--:| :--:| :--: |
@@ -66,11 +65,11 @@ We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17
 | JEDI   |    7.7    |  **16.2**   |  **20.6**   |  **74.2**   |  **87.4**    |
 
 
-* Speed (Inference time on [V100](https://www.nvidia.com/en-us/data-center/v100/) of one matching, listed as a reference to the practicality of different methods)
+* Speed (Inference time on [V100](https://www.nvidia.com/en-us/data-center/v100/) of one matching)
 
 | Method | Time(ms) | 
 | :--:   | :--:   |
-| ISP [[3](#refer-anchor-3)]    |   **33**     |  
+| ISP [[3](#refer-anchor-3)]    |   33     |  
 | DELG[[2](#refer-anchor-2)]   |   298    |  
 | GlobalTrack [[4](#refer-anchor-4)] | 113  |   
 | JEDI   |    40    |
