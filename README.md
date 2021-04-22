@@ -36,8 +36,8 @@ This repo has the accessory annotation and accessory search leaderboard proposed
 We evaluate the accessory search performance of different methods using metrics listed blow:
 
 * Metrics   
-    * *mAP*: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[<sup>1<sup>](#refer-anchor-1). Then the mean value of APs of all queries, i.e. mAP is obtained.
-    * *CMC(Rank-1)*: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [<sup>1<sup>](#refer-anchor-1). The Rank-1, Rank-5 and Rank-10 of CMC curve is used to represent the precision of different methods.   
+    * *mAP*: We use mean average precision(mAP) to evaluate the overall performance. For each query, we calculate the area under the Precision-Recall curve, which is known as average precision(AP)[[1](#refer-anchor-1)]. Then the mean value of APs of all queries, i.e. mAP is obtained.
+    * *CMC*: Cumulative Matching Characteristic, which shows the probability that a query object appears in deifferent-sized candidate lists. The calculation process is described in [[1](#refer-anchor-1)]. We choose Rank-1, Rank-5 and Rank-10 of CMC curve for a brief comparision in following leardborad.   
     * *ReCall(IoU>0.6)*: We propose ReCall(IoU>0.6) to measure how well the accessories have been exploited, i.e. recall at IoU>0.6. The box is regarded as a true match if its IoU to a ground truth accessory box is larger than 0.6. This metric is computed across all query and gallery boxes.
 
     Note: The calculation of mAP and CMC in proposed accessory search task is very similar with ReID. However, an image is considered as true positive only if it contains the same accessory as the query, no matter if the person is the same or not.
@@ -51,18 +51,18 @@ We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17
 
 | Method | Recall | mAP | R-1 | R-5 | R-10 |
 | :--:   | :--:   | :--:| :--:| :--:| :--: |
-| ISP [<sup>3<sup>](#refer-anchor-3)    |    _    |   0.4  |  0.2   |   0.8  |   1.4   |
-| DELG[<sup>2<sup>](#refer-anchor-2)   |    -   | 0.5    |  1.9   |   5.3  |   7.1   |
-| GlobalTrack [<sup>4<sup>](#refer-anchor-4) | -   |   1.9  |   12.3  |   40.4  |  49.0    |
+| ISP [[3](#refer-anchor-3)]    |    _    |   0.4  |  0.2   |   0.8  |   1.4   |
+| DELG[[2](#refer-anchor-2)]   |    -   | 0.5    |  1.9   |   5.3  |   7.1   |
+| GlobalTrack [[4](#refer-anchor-4)] | -   |   1.9  |   12.3  |   40.4  |  49.0    |
 | *JEDI*   |     *18.8*   |  *20.8*  |   *24.4*  |  *77.4*   |   *90.4*   |
 
 * Accessory-MSMT17
 
 | Method | Recall | mAP | R-1 | R-5 | R-10 |
 | :--:   | :--:   | :--:| :--:| :--:| :--: |
-| ISP [<sup>3<sup>](#refer-anchor-3)    |   -     |  0.2   |   0.2  |  0.7   |  1.2    |
-| DELG[<sup>2<sup>](#refer-anchor-2)   |    -    |  0.1   |   0.3  |  1.1   |  1.1    |
-| GlobalTrack [<sup>4<sup>](#refer-anchor-4) | -  |   1.6  |  4.3   |  30.4   |  39.1    |
+| ISP [[3](#refer-anchor-3)]    |   -     |  0.2   |   0.2  |  0.7   |  1.2    |
+| DELG[[2](#refer-anchor-2)]   |    -    |  0.1   |   0.3  |  1.1   |  1.1    |
+| GlobalTrack [[4](#refer-anchor-4)] | -  |   1.6  |  4.3   |  30.4   |  39.1    |
 | *JEDI*   |    *7.7*    |  *16.2*   |  *20.6*   |  *74.2*   |  *87.4*    |
 
 
@@ -70,9 +70,9 @@ We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17
 
 | Method | Time(ms) | 
 | :--:   | :--:   |
-| ISP [<sup>3<sup>](#refer-anchor-3)    |   33     |  
-| DELG[<sup>2<sup>](#refer-anchor-2)   |   298    |  
-| GlobalTrack [<sup>4<sup>](#refer-anchor-4) | 113  |   
+| ISP [[3](#refer-anchor-3)]    |   33     |  
+| DELG[[2](#refer-anchor-2)]   |   298    |  
+| GlobalTrack [[4](#refer-anchor-4)] | 113  |   
 | *JEDI*   |    40    |
 
 
