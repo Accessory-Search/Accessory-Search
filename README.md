@@ -50,19 +50,19 @@ We evaluated following methods in proposed Accessory-Market and Accessory-MSMT17
 
 | Method | Recall | mAP | R-1 | R-5 | R-10 |
 | :--:   | :--:   | :--:| :--:| :--:| :--: |
-| ISP [[3](#refer-anchor-3)]    |    _    |   0.4  |  0.2   |   0.8  |   1.4   |
-| DELG[[4](#refer-anchor-4)]   |    -   | 0.5    |  1.9   |   5.3  |   7.1   |
-| GlobalTrack [[5](#refer-anchor-5)] | -   |   1.9  |   12.3  |   40.4  |  49.0    |
-| JEDI   |    18.8   |  **20.8**  |   **24.4**  |  **77.4**   |   **90.4**   |
+| ISP [[3](#refer-anchor-3)]    |    _    |   14.2  |  27.7   |   35.6  |   38.6   |
+| DELG[[4](#refer-anchor-4)]   |    -   | 4.7    |  10.1   |   27.3  |   34.3   |
+| GlobalTrack [[5](#refer-anchor-5)] | -   |   7.3  |   83.7  |   89.8  |  91.8    |
+| JEDI   |    17.1   |  **47.9**  |   **87.8**  |  **97.2**   |   **98.2**   |
 
 * Accessory-MSMT17
 
 | Method | Recall | mAP | R-1 | R-5 | R-10 |
 | :--:   | :--:   | :--:| :--:| :--:| :--: |
-| ISP [[3](#refer-anchor-3)]    |   -     |  0.2   |   0.2  |  0.7   |  1.2    |
-| DELG[[4](#refer-anchor-4)]   |    -    |  0.1   |   0.3  |  1.1   |  1.1    |
-| GlobalTrack [[5](#refer-anchor-5)] | -  |   1.6  |  4.3   |  30.4   |  39.1    |
-| JEDI   |    7.7    |  **16.2**   |  **20.6**   |  **74.2**   |  **87.4**    |
+| ISP [[3](#refer-anchor-3)]    |   -     |  6.6   |   7.9  |  14.3   |  17.7    |
+| DELG[[4](#refer-anchor-4)]   |    -    |  2.5   |   15.0  |  22.7   |  28.3    |
+| GlobalTrack [[5](#refer-anchor-5)] | -  |   3.9  |  57.1   |  67.3   |  67.3    |
+| JEDI   |    10.2    |  **30.5**   |  **79.3**   |  **90.7**   |  **93.5**    |
 
 
 * Speed (Inference time on [V100](https://www.nvidia.com/en-us/data-center/v100/) of one matching)
